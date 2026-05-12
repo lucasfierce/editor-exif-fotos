@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Coordenadas - EXIF</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Configurações da Imagem</h2>
+
+            <div class="input-group">
+                <label>1. Carregar Foto (JPEG):</label>
+                <input type="file" id="fileInput" accept="image/jpeg">
+            </div>
+
+            <img id="preview" alt="Prévia da foto">
+            <p id="tiradaEm" class="info-text"></p>
+
+            <div class="input-group">
+                <label>Data da Foto (Formato EXIF: AAAA:MM:DD HH:MM:SS):</label>
+                <input type="text" id="dateInput" placeholder="Ex: 2026:05:08 10:30:00">
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <div class="input-group" style="flex: 1;">
+                    <label>Latitude:</label>
+                    <input type="number" id="latInput" step="any" placeholder="-7.1195">
+                </div>
+                <div class="input-group" style="flex: 1;">
+                    <label>Longitude:</label>
+                    <input type="number" id="lngInput" step="any" placeholder="-34.8450">
+                </div>
+            </div>
+
+            <button id="saveBtn">Salvar Alterações e Baixar</button>
+        </div>
+
+        <div class="right-panel">
+            <h2>Localização no Mapa</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/piexifjs/1.0.4/piexif.min.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
