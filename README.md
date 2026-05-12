@@ -1,5 +1,7 @@
 # Editor de Propriedades EXIF
 
+<img width="939" height="618" alt="image" src="https://github.com/user-attachments/assets/1affa10a-f490-4d71-add4-ec26e2eca5ff" />
+
 Este é um projeto simples e funcional desenvolvido para visualizar e editar metadados **EXIF** (Exchangeable Image File Format) de imagens diretamente no navegador. Com esta ferramenta, podes ler informações como modelo da câmara, configurações de exposição e localização GPS, além de realizar edições básicas.
 
 ## Funcionalidades
